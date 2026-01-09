@@ -1,8 +1,9 @@
 {
-    "id_pesan": "101",
+    "id_pesan": "102",
     "tampilkan": true,
-    "judul": "Update Fitur v1.0 Tersedia!",
+    "judul": "Update Fitur v2.0 Tersedia!",
     "pesan": "Halo Admin, kami telah merilis fitur baru: Laporan per Mata Pelajaran dan Backup Otomatis. Silakan hubungi developer untuk update patch terbaru.",
     "tipe": "info",
     "link_aksi": "https://wa.me/6285766751033"
+
 }
