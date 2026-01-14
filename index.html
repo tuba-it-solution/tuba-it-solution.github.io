@@ -249,7 +249,7 @@
         .feature-card h3 { margin-bottom: 10px; font-size: 1.4rem; color: #fff; }
         .feature-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
 
-        /* --- SCREENSHOT SLIDER SECTION (NEW) --- */
+        /* --- SCREENSHOT SLIDER SECTION --- */
         .slider-section {
             padding: 50px 0;
             overflow: hidden;
@@ -260,7 +260,7 @@
             max-width: 1000px;
             margin: 0 auto;
             position: relative;
-            height: 400px; /* Adjust based on image ratio */
+            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -269,13 +269,12 @@
         .slide-item {
             position: absolute;
             transition: all 0.5s ease-in-out;
-            width: 60%; /* Center Image Width */
+            width: 60%;
             opacity: 0;
             transform: scale(0.8);
             z-index: 0;
             border-radius: 15px;
             overflow: hidden;
-            /* Default subtle border */
             border: 2px solid rgba(255,255,255,0.1);
         }
         
@@ -285,31 +284,16 @@
             display: block;
         }
 
-        /* Active Slide (Center) */
         .slide-item.active {
             opacity: 1;
             transform: translateX(0) scale(1);
             z-index: 10;
-            /* NEON GLOW EFFECT */
             border: 2px solid var(--primary);
             box-shadow: 0 0 30px var(--primary), 0 0 10px var(--secondary); 
         }
 
-        /* Previous Slide (Left) */
-        .slide-item.prev {
-            opacity: 0.4;
-            transform: translateX(-60%) scale(0.85);
-            z-index: 5;
-            filter: blur(2px);
-        }
-
-        /* Next Slide (Right) */
-        .slide-item.next {
-            opacity: 0.4;
-            transform: translateX(60%) scale(0.85);
-            z-index: 5;
-            filter: blur(2px);
-        }
+        .slide-item.prev { opacity: 0.4; transform: translateX(-60%) scale(0.85); z-index: 5; filter: blur(2px); }
+        .slide-item.next { opacity: 0.4; transform: translateX(60%) scale(0.85); z-index: 5; filter: blur(2px); }
 
         .slider-controls {
             display: flex;
@@ -334,6 +318,33 @@
             background: var(--primary);
             color: black;
             box-shadow: 0 0 15px var(--primary);
+        }
+
+        /* --- NEW: VIDEO SECTION STYLE --- */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 20px;
+            border: 2px solid rgba(255,255,255,0.1);
+            box-shadow: 0 0 30px rgba(112, 0, 255, 0.2); /* Soft purple glow */
+            transition: 0.3s;
+        }
+
+        .video-wrapper:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 40px rgba(0, 242, 255, 0.4); /* Cyan glow on hover */
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         /* --- MAP & STATS SECTION --- */
@@ -405,10 +416,7 @@
 
         /* --- Pricing --- */
         .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            align-items: center;
+            display: flex; /* Changed to Flex to center single item */
             justify-content: center;
             max-width: 1200px;
             margin: 0 auto;
@@ -422,6 +430,8 @@
             text-align: center;
             transition: 0.3s;
             position: relative;
+            width: 100%;
+            max-width: 400px; /* Limiting width since it's single */
         }
 
         .price-card.featured {
@@ -535,8 +545,7 @@
             <a href="#home">Beranda</a>
             <a href="#features">Fitur</a>
             <a href="#gallery">Galeri</a>
-            <a href="#traction">Portofolio</a>
-            <a href="#pricing">Harga</a>
+            <a href="#video">Review</a> <a href="#pricing">Harga</a>
             <a href="https://wa.me/6285766751033" class="btn-nav">BELI SEKARANG</a>
         </div>
     </nav>
@@ -553,8 +562,7 @@
                 <a href="#pricing" class="btn-cta">
                     <i class="fas fa-shopping-cart"></i> Ambil Diskon Sekarang
                 </a>
-                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--accent);">*Tersedia Live Demo Gratis</p>
-            </div>
+                </div>
         </div>
     </header>
 
@@ -648,6 +656,23 @@
         </div>
     </section>
 
+    <section id="video" class="section">
+        <div class="section-title reveal">
+            <h2>Review <span class="gradient-text">Aplikasi</span></h2>
+            <p>Lihat bagaimana sistem bekerja secara langsung dari pengguna kami.</p>
+        </div>
+        
+        <div class="video-wrapper reveal">
+            <iframe 
+                src="https://www.youtube.com/embed/GANTI_ID_VIDEO_DISINI" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
     <section id="traction" class="map-section reveal">
         <div class="section-title">
             <h2>Dipercaya oleh <span class="gradient-text">Sekolah & Instansi</span></h2>
@@ -685,17 +710,6 @@
         </div>
 
         <div class="pricing-grid">
-            <div class="price-card reveal">
-                <h3>Starter / Demo</h3>
-                <div class="price">GRATIS<span>/3 hari</span></div>
-                <ul class="features-list">
-                    <li><i class="fas fa-check"></i> Uji Coba Fitur</li>
-                    <li><i class="fas fa-check"></i> Max 50 Siswa</li>
-                    <li><i class="fas fa-times" style="color:#555"></i> Export Laporan</li>
-                </ul>
-                <a href="https://wa.me/6285766751033?text=Demo" class="btn-nav">Coba Sekarang</a>
-            </div>
-
             <div class="price-card featured reveal">
                 <div class="discount-badge">HEMAT 50%</div>
                 <h3>PROFESSIONAL</h3>
@@ -733,7 +747,7 @@
             document.querySelector('.nav-links').classList.toggle('active');
         }
 
-        // 2. Slider Gallery Script (NEW)
+        // 2. Slider Gallery Script
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slide-item');
         const totalSlides = slides.length;
@@ -742,7 +756,6 @@
             slides.forEach((slide, index) => {
                 slide.classList.remove('active', 'prev', 'next');
                 
-                // Logic to determine Prev, Active, Next classes based on circular array
                 if (index === slideIndex) {
                     slide.classList.add('active');
                 } else if (index === (slideIndex - 1 + totalSlides) % totalSlides) {
@@ -763,7 +776,6 @@
             updateSlides();
         }
 
-        // Auto play slider every 3 seconds
         setInterval(nextSlide, 3000);
 
         // 3. Scroll Reveal & Counter
@@ -813,7 +825,6 @@
             run();
         }
 
-        // Trigger reveal initial
         window.dispatchEvent(new Event('scroll'));
 
         // 4. Canvas Particles
@@ -893,4 +904,3 @@
     </script>
 </body>
 </html>
-
