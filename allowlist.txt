@@ -1,3 +1,4 @@
-localhost
+
 sman1jakarta.sch.id
+
 sekolah-juara.com
