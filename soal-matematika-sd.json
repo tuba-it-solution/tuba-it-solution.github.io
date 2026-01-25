@@ -1,7 +1,7 @@
 [
     { 
         "soal": "Perhatikan gambar hewan di bawah ini. Hewan tersebut berkembang biak dengan cara...", 
-        "gambar": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nelore_in_the_pescador_river.jpg/640px-Nelore_in_the_pescador_river.jpg",
+        "gambar": "https://rencanamu.id/assets/file_uploaded/blog/1572532392-shuttersto.jpg",
         "a": "Bertelur", "b": "Melahirkan", "c": "Membelah diri", "d": "Fragmentasi", 
         "kunci": "b" 
     },
@@ -12,3 +12,4 @@
         "kunci": "c" 
     }
 ]
+
