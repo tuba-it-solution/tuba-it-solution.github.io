@@ -1,12 +1,13 @@
 {
-    "id_pesan": "104",
+    "id_pesan": "105",
     "tampilkan": true,
-    "judul": "Update Fitur v1.5 Tersedia!",
-    "pesan": "Halo Admin, kami telah merilis fitur baru: Update Sistem, Alur Aplikasi dan Perubahan Bahasa Inggris menjadi bahasa Indonesia. Silakan hubungi developer untuk update patch terbaru.",
+    "judul": "Update Fitur v1.6 Tersedia!",
+    "pesan": "Halo Admin, kami telah merilis fitur baru: Update UI Dashboard admin, Halaman Login dan Perbaikan Bug Kecil.",
     "tipe": "info",
-    "link_aksi": "https://wa.me/6285766751033"
+    "link_aksi": "https://drive.google.com/drive/folders/1sjU15IZP0i2oCdHpJNjzsczt1cnIgnE-?usp=sharing"
 
 }
+
 
 
 
