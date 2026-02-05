@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Fullstack Developer",
+    "company": "Tech Innovate",
+    "location": "Jakarta (Remote)",
+    "salary": "Rp 15.000.000",
+    "type": "Full-time",
+    "link": "https://whatsapp.com/..."
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "Creative Studio",
+    "location": "Bandung",
+    "salary": "Negotiable",
+    "type": "Contract",
+    "link": "#"
+  }
+]
