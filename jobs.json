@@ -5,14 +5,42 @@
     "location": "Jakarta (Remote)",
     "salary": "Rp 15.000.000",
     "type": "Full-time",
-    "link": "https://whatsapp.com/..."
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+    "link": "https://wa.me/628123456789",
+    "description": "Kami mencari developer berpengalaman untuk membangun sistem skala besar.",
+    "requirements": ["Minimal 2 tahun pengalaman PHP/Laravel", "Familiar dengan Tailwind & JavaScript", "Dapat bekerja dalam tim"]
   },
   {
-    "title": "UI/UX Designer",
-    "company": "Creative Studio",
-    "location": "Bandung",
-    "salary": "Negotiable",
-    "type": "Contract",
-    "link": "#"
-  }
+    "title": "Fullstack Developer",
+    "company": "Tech Innovate",
+    "location": "Jakarta (Remote)",
+    "salary": "Rp 15.000.000",
+    "type": "Full-time",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+    "link": "https://wa.me/628123456789",
+    "description": "Kami mencari developer berpengalaman untuk membangun sistem skala besar.",
+    "requirements": ["Minimal 2 tahun pengalaman PHP/Laravel", "Familiar dengan Tailwind & JavaScript", "Dapat bekerja dalam tim"]
+  },
+  {
+    "title": "Fullstack Developer",
+    "company": "Tech Innovate",
+    "location": "Jakarta (Remote)",
+    "salary": "Rp 15.000.000",
+    "type": "Full-time",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+    "link": "https://wa.me/628123456789",
+    "description": "Kami mencari developer berpengalaman untuk membangun sistem skala besar.",
+    "requirements": ["Minimal 2 tahun pengalaman PHP/Laravel", "Familiar dengan Tailwind & JavaScript", "Dapat bekerja dalam tim"]
+  },
+  {
+    "title": "Fullstack Developer",
+    "company": "Tech Innovate",
+    "location": "Jakarta (Remote)",
+    "salary": "Rp 15.000.000",
+    "type": "Full-time",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
+    "link": "https://wa.me/628123456789",
+    "description": "Kami mencari developer berpengalaman untuk membangun sistem skala besar.",
+    "requirements": ["Minimal 2 tahun pengalaman PHP/Laravel", "Familiar dengan Tailwind & JavaScript", "Dapat bekerja dalam tim"]
+  },
 ]
